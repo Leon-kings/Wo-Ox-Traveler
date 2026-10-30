@@ -14,8 +14,6 @@ import {
   Group,
   Star,
   AccessTime,
-  Language,
-  Explore,
   LocationOn,
   AttachMoney,
   Hotel,

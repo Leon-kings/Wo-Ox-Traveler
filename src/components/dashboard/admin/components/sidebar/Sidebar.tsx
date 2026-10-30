@@ -7,8 +7,6 @@ import {
   CardTravel,
   Settings,
   Logout,
-  Person,
-  Email,
   Close as CloseIcon,
   Menu as MenuIcon,
   ChevronLeft,
@@ -16,26 +14,18 @@ import {
   Explore,
   Public,
   Hotel,
-  Luggage,
   SupportAgent,
   LocalOffer,
   TravelExplore,
   AdminPanelSettings,
   Add,
-  Chat,
   Help,
-  Info,
-  Star,
-  TrendingUp,
-  AttachMoney,
-  AccessTime,
   Notifications,
   People,
   BarChart,
   AssignmentTurnedIn,
-  WhatsApp,
   ContactSupport,
-  Home,
+
 } from "@mui/icons-material";
 
 /* ================= SESSION ================= */
@@ -81,7 +71,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ mobileOpen = false, onMobileCl
   const navigate = useNavigate();
   const location = useLocation();
 
-  const [user, setUser] = useState<SessionUser | null>(() => {
+  const [user] = useState<SessionUser | null>(() => {
     try {
       const raw = localStorage.getItem(SESSION_KEY);
       return raw ? (JSON.parse(raw) as SessionUser) : null;

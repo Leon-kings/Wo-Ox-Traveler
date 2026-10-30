@@ -5,7 +5,6 @@ import { SidebarToggle, Sidebar } from "../user/components/sidebar/Sidebar";
 import {
   FlightTakeoff,
   CardTravel,
-  Settings,
   Person,
   Email,
   Phone,

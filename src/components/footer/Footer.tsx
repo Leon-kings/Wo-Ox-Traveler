@@ -1,5 +1,5 @@
 // Footer.tsx
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {
   FlightTakeoff,
@@ -9,7 +9,6 @@ import {
   CheckCircle,
   Cancel,
   Error as ErrorIcon,
-  Close as CloseIcon,
   ArrowForward,
   Facebook,
   Twitter,
@@ -19,7 +18,6 @@ import {
   WhatsApp,
   Send,
   Public,
-  Explore,
   Hotel,
   TravelExplore,
   LocalOffer,
@@ -29,13 +27,10 @@ import {
   SupportAgent,
   AttachMoney,
   GppGood,
-  CardTravel,
-  Home,
   Info,
   ContactSupport,
   KeyboardArrowUp,
   Language,
-  CreditCard,
   Security,
 } from "@mui/icons-material";
 

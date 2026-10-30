@@ -15,7 +15,6 @@ import {
   Diamond,
   VerifiedUser,
   Savings,
-  Map as MapIcon,
   Close as CloseIcon,
   Error as ErrorIcon,
   Person,
