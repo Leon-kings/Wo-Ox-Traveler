@@ -277,7 +277,7 @@ const ModalShell: React.FC<ModalShellProps> = ({
         className="absolute inset-0 bg-black/85 backdrop-blur-md animate-[fadeIn_0.3s_ease-out]"
       />
       <div
-        className={`relative w-full ${wide ? "max-w-2xl" : "max-w-md"} bg-black border border-white/15 rounded-2xl
+        className={`relative w-full ${wide ? "max-w-full" : "max-w-full"} bg-black border border-white/15 rounded-2xl
           shadow-[0_0_60px_rgba(255,255,255,0.08)] p-6 sm:p-8
           animate-[modalPop_0.4s_cubic-bezier(0.34,1.56,0.64,1)]
           max-h-[92vh] overflow-y-auto`}
@@ -618,7 +618,7 @@ export const About: React.FC = () => {
         {/* ================= HERO INTRO ================= */}
         <div
           ref={contentRef}
-          className="relative z-10 mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+          className="relative z-10 mx-auto max-w-full 2xl:max-w-full
             px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24
             pt-16 sm:pt-20 md:pt-24 pb-10 md:pb-14"
         >
@@ -644,7 +644,7 @@ export const About: React.FC = () => {
                 <span className="text-white/40">We craft journeys.</span>
               </h1>
 
-              <p className="text-white/60 text-sm sm:text-base leading-relaxed mb-4 max-w-xl">
+              <p className="text-white/60 text-sm sm:text-base leading-relaxed mb-4 max-w-full">
                 Wo Ox Travel is a boutique travel company built by explorers,
                 for explorers. Since 2015, we've helped over{" "}
                 <span className="text-white font-semibold">
@@ -654,7 +654,7 @@ export const About: React.FC = () => {
                 Caribbean coves to Swiss alpine peaks — with seamless planning,
                 local expertise, and genuine care.
               </p>
-              <p className="text-white/40 text-sm leading-relaxed max-w-xl mb-8">
+              <p className="text-white/40 text-sm leading-relaxed max-w-full mb-8">
                 No generic itineraries. No hidden fees. Just unforgettable
                 journeys designed around{" "}
                 <span className="text-white/70 font-medium">you</span>.
@@ -703,7 +703,7 @@ export const About: React.FC = () => {
             <div
               className={`relative ${contentInView ? "animate-[fadeRight_0.8s_ease-out_both]" : "opacity-0"}`}
             >
-              <div className="relative aspect-[4/5] max-w-md mx-auto lg:mx-0 lg:ml-auto">
+              <div className="relative aspect-[4/5] max-w-full mx-auto lg:mx-0 lg:ml-auto">
                 <div
                   className="absolute inset-0 rounded-3xl overflow-hidden border border-white/15
                   shadow-[0_30px_80px_rgba(255,255,255,0.06)]"
@@ -786,7 +786,7 @@ export const About: React.FC = () => {
         {/* ================= STATS BAR ================= */}
         <div
           ref={statsRef}
-          className="relative z-10 mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+          className="relative z-10 mx-auto max-w-full 2xl:max-w-full
           px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24 pb-16 md:pb-20"
         >
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
@@ -806,7 +806,7 @@ export const About: React.FC = () => {
 
         {/* ================= VALUES ================= */}
         <div
-          className="relative z-10 mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+          className="relative z-10 mx-auto max-w-full 2xl:max-w-full
           px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24 pb-16 md:pb-20"
         >
           <div className="text-center mb-10 sm:mb-14">
@@ -861,7 +861,7 @@ export const About: React.FC = () => {
 
         {/* ================= TIMELINE ================= */}
         <div
-          className="relative z-10 mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+          className="relative z-10 mx-auto max-w-full 2xl:max-w-full
           px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24 pb-16 md:pb-20"
         >
           <div className="text-center mb-10 sm:mb-14">
@@ -927,7 +927,7 @@ export const About: React.FC = () => {
 
         {/* ================= FINAL CTA ================= */}
         <div
-          className="relative z-10 mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+          className="relative z-10 mx-auto max-w-full 2xl:max-w-full
           px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24 pb-20"
         >
           <div
@@ -955,7 +955,7 @@ export const About: React.FC = () => {
                 <br />
                 <span className="text-white/40">starts here.</span>
               </h2>
-              <p className="text-white/50 text-sm sm:text-base max-w-xl mx-auto mb-8">
+              <p className="text-white/50 text-sm sm:text-base max-w-full mx-auto mb-8">
                 Let's turn your wanderlust into a journey you'll never forget.
               </p>
               <div className="flex flex-wrap items-center justify-center gap-3">

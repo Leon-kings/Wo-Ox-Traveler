@@ -188,7 +188,7 @@ const BookingModal: React.FC<BookingModalProps> = ({
         className="absolute inset-0 bg-black/85 backdrop-blur-md animate-[fadeIn_0.3s_ease-out]"
       />
       <div
-        className="relative w-full max-w-lg bg-black border border-white/15 rounded-2xl
+        className="relative w-full max-w-full bg-black border border-white/15 rounded-2xl
           shadow-[0_0_60px_rgba(255,255,255,0.08)] p-6 sm:p-8
           animate-[modalPop_0.4s_cubic-bezier(0.34,1.56,0.64,1)]
           max-h-[92vh] overflow-y-auto"
@@ -381,7 +381,7 @@ const ResultModal: React.FC<ResultModalProps> = ({
         className="absolute inset-0 bg-black/85 backdrop-blur-md"
       />
       <div
-        className="relative w-full max-w-sm bg-black border border-white/15 rounded-2xl p-8 text-center
+        className="relative w-full max-w-full bg-black border border-white/15 rounded-2xl p-8 text-center
           shadow-[0_0_60px_rgba(255,255,255,0.12)]
           animate-[modalPop_0.4s_cubic-bezier(0.34,1.56,0.64,1)]"
       >
@@ -605,7 +605,7 @@ export const Hero: React.FC = () => {
 
           {/* ============ Info Stats Bar ============ */}
           <div className="mt-10 sm:mt-14 lg:mt-20">
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 max-w-3xl">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 max-w-full">
               {[
                 {
                   icon: <People fontSize="small" />,

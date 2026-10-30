@@ -201,7 +201,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ mobileOpen = false, onMobileCl
       {/* ================= USER CARD ================= */}
       {!collapsed && user && (
         <div className="px-3 pt-4">
-          <div className="relative overflow-hidden rounded-xl border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.02] p-3">
+          <div className="relative overflow-hidden rounded-xl border border-white/10 bg-linear-to-br from-white/[0.06] to-white/[0.02] p-3">
             <div className="flex items-center gap-2.5">
               <div className="w-9 h-9 rounded-full bg-white text-black flex items-center justify-center shrink-0">
                 {user.role === "admin" ? <AdminPanelSettings fontSize="small" /> : <SupportAgent fontSize="small" />}

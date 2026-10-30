@@ -230,13 +230,13 @@ const ResultModal: React.FC<{
   if (!open) return null;
   const isSuccess = type === "success";
   return (
-    <div className="fixed inset-0 z-[120] flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-120 flex items-center justify-center p-4">
       <div
         onClick={onClose}
         className="absolute inset-0 bg-black/85 backdrop-blur-md"
       />
       <div
-        className="relative w-full max-w-sm bg-black border border-white/15 rounded-2xl p-8 text-center
+        className="relative w-full max-w-full bg-black border border-white/15 rounded-2xl p-8 text-center
         shadow-[0_0_60px_rgba(255,255,255,0.12)] animate-[modalPop_0.4s_cubic-bezier(0.34,1.56,0.64,1)]"
       >
         <div

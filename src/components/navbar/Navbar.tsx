@@ -889,7 +889,7 @@ export const Navbar: React.FC = () => {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full px-3 xs:px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16">
+        <div className="relative mx-auto w-full max-w-full 2xl:max-w-full px-3 xs:px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 2xl:px-16">
           <div className="flex items-center justify-between h-14 sm:h-16 md:h-[72px]">
             {/* LEFT */}
             <div className="flex items-center gap-2 sm:gap-3">

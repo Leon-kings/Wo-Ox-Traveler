@@ -355,7 +355,7 @@ const ModalShell: React.FC<ModalShellProps> = ({
         className="absolute inset-0 bg-black/85 backdrop-blur-md animate-[fadeIn_0.3s_ease-out]"
       />
       <div
-        className="relative w-full max-w-md bg-black border border-white/15 rounded-2xl
+        className="relative w-full max-w-full bg-black border border-white/15 rounded-2xl
           shadow-[0_0_60px_rgba(255,255,255,0.08)] p-6 sm:p-8
           animate-[modalPop_0.4s_cubic-bezier(0.34,1.56,0.64,1)]
           max-h-[92vh] overflow-y-auto"
@@ -409,7 +409,7 @@ const ResultModal: React.FC<ResultModalProps> = ({
         className="absolute inset-0 bg-black/85 backdrop-blur-md"
       />
       <div
-        className="relative w-full max-w-sm bg-black border border-white/15 rounded-2xl p-8 text-center
+        className="relative w-full max-w-full bg-black border border-white/15 rounded-2xl p-8 text-center
           shadow-[0_0_60px_rgba(255,255,255,0.12)]
           animate-[modalPop_0.4s_cubic-bezier(0.34,1.56,0.64,1)]"
       >
@@ -639,11 +639,11 @@ export const Countries: React.FC = () => {
 
         {/* ================= HEADER ================= */}
         <div
-          className="relative z-10 mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+          className="relative z-10 mx-auto max-w-full 2xl:max-w-full
           px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24
           pt-16 sm:pt-20 md:pt-24 pb-10 md:pb-14"
         >
-          <div className="text-center max-w-3xl mx-auto">
+          <div className="text-center max-w-full mx-auto">
             <div
               className={
                 inView ? "animate-[fadeUp_0.6s_ease-out_both]" : "opacity-0"
@@ -666,7 +666,7 @@ export const Countries: React.FC = () => {
                 <span className="text-white/40">to wake up next?</span>
               </h1>
 
-              <p className="text-white/60 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+              <p className="text-white/60 text-sm sm:text-base leading-relaxed max-w-full mx-auto mb-6">
                 {countries.length}+ handpicked destinations across 6 continents
                 — with all-inclusive packages, transparent pricing, and instant
                 booking.
@@ -692,7 +692,7 @@ export const Countries: React.FC = () => {
 
         {/* ================= SEARCH / FILTER BAR ================= */}
         <div
-          className="relative z-10 mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+          className="relative z-10 mx-auto max-w-full 2xl:max-w-full
           px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24 pb-8"
         >
           <div
@@ -767,7 +767,7 @@ export const Countries: React.FC = () => {
 
         {/* ================= COUNTRY CARDS ================= */}
         <div
-          className="relative z-10 mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+          className="relative z-10 mx-auto max-w-full 2xl:max-w-full
           px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24 pb-14 md:pb-20"
         >
           {filtered.length === 0 ? (
@@ -937,7 +937,7 @@ export const Countries: React.FC = () => {
 
         {/* ================= CTA ================= */}
         <div
-          className="relative z-10 mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+          className="relative z-10 mx-auto max-w-full 2xl:max-w-full
           px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24 pb-20"
         >
           <div
@@ -964,7 +964,7 @@ export const Countries: React.FC = () => {
                 <br />
                 <span className="text-white/40">country here?</span>
               </h2>
-              <p className="text-white/50 text-sm sm:text-base max-w-xl mx-auto mb-8">
+              <p className="text-white/50 text-sm sm:text-base max-w-full mx-auto mb-8">
                 Tell us where you want to go — we'll craft a custom itinerary
                 anywhere in the world.
               </p>
