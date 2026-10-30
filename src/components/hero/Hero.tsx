@@ -554,7 +554,7 @@ export const Hero: React.FC = () => {
 
         {/* ============ Content ============ */}
         <div
-          className="relative z-20 mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+          className="relative z-20 mx-auto max-w-full 2xl:max-w-full
           px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24
           pt-28 sm:pt-32 md:pt-36 lg:pt-40 pb-24 md:pb-32"
         >
