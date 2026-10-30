@@ -1,0 +1,11 @@
+:root {
+  font-size: 16px;
+  padding: 2px 2px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 100%;
+  color: var(--accent);
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+  
+}
