@@ -526,7 +526,7 @@ export const Hero: React.FC = () => {
 
       <section
         id="hero"
-        className="relative w-full min-h-[88vh] md:min-h-screen overflow-hidden bg-black"
+        className="relative w-full overflow-hidden bg-black"
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
       >
@@ -558,7 +558,7 @@ export const Hero: React.FC = () => {
           px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24
           pt-28 sm:pt-32 md:pt-36 lg:pt-40 pb-24 md:pb-32"
         >
-          <div key={active.id} className="hero-text-anim max-w-3xl">
+          <div key={active.id} className="hero-text-anim max-w-full">
             <div className="flex items-center gap-2 mb-4">
               <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
               <span className="text-white/70 text-xs sm:text-sm font-semibold tracking-[3px] uppercase">
@@ -747,7 +747,7 @@ export const Hero: React.FC = () => {
         {/* ============ Bottom Controls ============ */}
         <div className="absolute bottom-0 left-0 right-0 z-30">
           <div
-            className="mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+            className="mx-auto max-w-full 2xl:max-w-full
             px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24 pb-6 sm:pb-8"
           >
             <div className="flex items-end justify-between gap-4">

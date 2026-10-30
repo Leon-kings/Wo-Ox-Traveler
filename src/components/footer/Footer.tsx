@@ -86,7 +86,7 @@ const ResultModal: React.FC<{
     <div className="fixed inset-0 z-[120] flex items-center justify-center p-4">
       <div onClick={onClose} className="absolute inset-0 bg-black/85 backdrop-blur-md" />
       <div
-        className="relative w-full max-w-sm bg-black border border-white/15 rounded-2xl p-8 text-center
+        className="relative w-full max-w-full bg-black border border-white/15 rounded-2xl p-8 text-center
         shadow-[0_0_60px_rgba(255,255,255,0.12)] animate-[modalPop_0.4s_cubic-bezier(0.34,1.56,0.64,1)]"
       >
         <div
@@ -241,7 +241,7 @@ export const Footer: React.FC = () => {
           <div className="h-[2px] bg-gradient-to-r from-transparent via-white/40 to-transparent" />
         </div>
 
-        <div className="relative mx-auto max-w-[1600px] 2xl:max-w-[1800px]
+        <div className="relative mx-auto max-w-full 2xl:max-w-full
           px-4 xs:px-5 sm:px-8 md:px-10 lg:px-14 xl:px-20 2xl:px-24
           pt-14 sm:pt-16 pb-8">
 
@@ -266,7 +266,7 @@ export const Footer: React.FC = () => {
                 <h3 className="text-white font-extrabold text-2xl sm:text-3xl md:text-4xl tracking-tight mb-2">
                   Get travel deals in your inbox
                 </h3>
-                <p className="text-white/50 text-sm sm:text-base max-w-md">
+                <p className="text-white/50 text-sm sm:text-base max-w-full">
                   Weekly inspiration, exclusive offers, and insider tips from our Wo Ox Travel team.
                 </p>
               </div>
@@ -341,7 +341,7 @@ export const Footer: React.FC = () => {
                 </div>
               </Link>
 
-              <p className="text-white/50 text-sm leading-relaxed mb-5 max-w-sm">
+              <p className="text-white/50 text-sm leading-relaxed mb-5 max-w-full">
                 Boutique travel crafted by explorers, for explorers. We've helped over 50,000 travelers discover
                 the world's most extraordinary places since 2015.
               </p>
