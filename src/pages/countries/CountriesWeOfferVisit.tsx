@@ -468,7 +468,6 @@ export const Countries: React.FC = () => {
   const [bookDate, setBookDate] = useState("");
   const [bookGuests, setBookGuests] = useState("2");
   const [bookPackage, setBookPackage] = useState("standard");
-  const [bookNotes, setBookNotes] = useState("");
 
   // Result
   const [resultOpen, setResultOpen] = useState(false);
@@ -575,7 +574,6 @@ export const Countries: React.FC = () => {
     setBookDate("");
     setBookGuests("2");
     setBookPackage("standard");
-    setBookNotes("");
     setSelectedCountry(null);
   };
 
